@@ -18,6 +18,10 @@ Identification-of-Genes-Associated-with-Autism-Spectrum-Disorder/
 │ ├── SFARI-Gene_genes.csv
 │ ├── negative_genes.csv
 │ └── ppi_network_largest_component.edgelist
+├── Submission/
+│ ├── BSDS-Thesis.pdf
+│ ├── Concept-Paper.pdf
+│ └── Research-Poster.pdf
 ├── README.md
 └── requirements.txt
 ```
