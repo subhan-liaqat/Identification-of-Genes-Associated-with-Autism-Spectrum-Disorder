@@ -1,21 +1,19 @@
 # Identification of Genes Associated with Autism Spectrum Disorder  
 **Network-Propagation Based Semi-Supervised Learning**
 
-_Author: Subhan Liaqat_  
-_Email: mughalsubhan946@gmail.com_
+---
+
+## 🧠 Project Overview
+
+This repository contains a computational method to identify and rank genes potentially associated with **Autism Spectrum Disorder (ASD)** using a **network-propagation (semi-supervised) approach**. The entire process—from data preprocessing to propagation and analysis—is documented within the main notebook.
 
 ---
 
-## 🧠 Overview
-This project implements a **Network-Propagation-Based Semi-Supervised Learning** approach to identify and prioritize genes associated with **Autism Spectrum Disorder (ASD)**.  
-The analysis integrates known ASD genes, negative control gene sets, and protein–protein interaction (PPI) data to propagate labels and rank candidate genes based on their association likelihood.
+## 📂 Repository Structure
 
----
-
-## 📓 Repository Contents
-.
-├── README.md
+Identification-of-Genes-Associated-with-Autism-Spectrum-Disorder/
 ├── LICENSE
+├── README.md
 ├── requirements.txt
 ├── Concept-Paper.pdf
 └── FYP-Code.ipynb
@@ -23,56 +21,59 @@ The analysis integrates known ASD genes, negative control gene sets, and protein
 yaml
 Copy code
 
-- **FYP-Code.ipynb** — main notebook containing data preprocessing, propagation model, results, and visualizations  
-- **Concept-Paper.pdf** — detailed project write-up and methodology  
-- **requirements.txt** — dependencies needed to run the notebook  
-- **LICENSE** — MIT open-source license  
+- **FYP-Code.ipynb** — The main Jupyter notebook: includes data loading, preprocessing, propagation algorithm, evaluation, and results.  
+- **Concept-Paper.pdf** — The write-up / methodology description of the project.  
+- **requirements.txt** — Lists Python dependencies needed to run the notebook.  
+- **LICENSE** — The open-source license (e.g., MIT).  
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup & Installation
+
 ```bash
-# clone the repository
+# Clone the repository
 git clone https://github.com/subhan-liaqat/Identification-of-Genes-Associated-with-Autism-Spectrum-Disorder.git
 cd Identification-of-Genes-Associated-with-Autism-Spectrum-Disorder
 
-# create and activate virtual environment
+# (Optional but recommended) Create a virtual environment
 python -m venv .venv
-source .venv/bin/activate      # mac/linux
-# .venv\Scripts\activate       # windows
+source .venv/bin/activate     # macOS / Linux
+# .venv\Scripts\activate      # Windows
 
-# install dependencies
+# Install dependencies
 pip install -r requirements.txt
 ▶️ Running the Notebook
-Launch Jupyter:
+Launch Jupyter Notebook / Lab in the repo directory:
 
 bash
 Copy code
 jupyter notebook
 Open FYP-Code.ipynb
 
-Run all cells sequentially to:
+Execute cells in order. The notebook includes:
 
-Load and preprocess data
+Data import and preprocessing
 
-Construct the protein–protein interaction network
+Building or loading a PPI network
 
-Perform network propagation using Random Walk with Restart (RWR)
+Label initialization (positive / negative genes)
 
-Rank candidate genes
+Network propagation (Random Walk with Restart)
 
-Visualize and interpret results
+Evaluation (AUROC, AUPRC, MCC)
 
-📊 Results Summary
-Algorithm: Random Walk with Restart (λ = 0.9)
+Visualization and interpretation of top candidate genes
 
-Performance Metrics: AUROC, AUPRC, and MCC used for evaluation
+📊 Results & Findings
+The notebook provides performance metrics such as AUROC, AUPRC, and MCC.
 
-Biological Insights: Top-ranked genes show enrichment in synaptic and neural signaling pathways, overlapping with known ASD candidates.
+It also shows pathway enrichment analyses and a ranked list of top candidate genes enriched for ASD-relevant biological processes.
 
-(See full results and tables in the notebook.)
+You can export tables and plots from the notebook (e.g. as .csv, .png) for supplementary material.
 
-🧾 Requirements
+📋 Dependencies
+Below is a sample of packages required (see full list in requirements.txt):
+
 nginx
 Copy code
 numpy
@@ -85,12 +86,12 @@ seaborn
 tqdm
 gseapy
 requests
-📄 License
-This project is licensed under the MIT License.
-See LICENSE for details.
+📜 License
+This project is released under the MIT License.
+See the LICENSE file for details.
 
-📬 Contact
-For questions or collaboration:
-📧 mughalsubhan946@gmail.com
+✉️ Contact & Citation
+If you use or extend this work, please cite the accompanying concept paper and credit the author.
+For questions, feedback or collaboration, reach out: mughalsubhan946@gmail.com
 
-Thank you for visiting this repository! 🌱
+Thank you for exploring this project! 🚀
