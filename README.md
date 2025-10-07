@@ -25,10 +25,17 @@ Identification-of-Genes-Associated-with-Autism-Spectrum-Disorder/
 ├── README.md
 └── requirements.txt
 ```
-- **FYP-Code.ipynb** → main notebook containing data loading, propagation algorithm, and result analysis  
-- **Concept-Paper.pdf** → project concept and detailed methodology  
-- **requirements.txt** → dependencies required to run the notebook  
-- **LICENSE** → MIT open-source license  
+
+- **FYP-Code.ipynb** → Main Jupyter Notebook containing data loading, network propagation algorithm, evaluation, and visualization of results  
+- **Data/** → Folder containing all input datasets:
+  - `SFARI-Gene_genes.csv` → Known ASD genes  
+  - `negative_genes.csv` → Negative control genes  
+  - `ppi_network_largest_component.edgelist` → Protein–protein interaction network  
+- **Submission/** → Folder containing project submissions and documentation:
+  - `Concept-Paper.pdf` → Project concept and detailed methodology  
+  - `BSDS-Thesis.pdf` → Full thesis document  
+  - `Research-Poster.pdf` → Visual summary of the project  
+- **requirements.txt** → List of dependencies required to run the notebook 
 
 ---
 
@@ -91,14 +98,6 @@ tqdm
 gseapy  
 requests  
 ```
----
-
-## 📄 License
-
-This project is released under the **MIT License**.  
-See the LICENSE file for full details.
-
----
 
 ## ✉️ Contact & Citation
 
