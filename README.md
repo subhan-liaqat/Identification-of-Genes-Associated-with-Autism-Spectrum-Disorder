@@ -11,14 +11,16 @@ All steps — preprocessing, propagation, evaluation, and visualization — are 
 ---
 
 ## 📂 Repository Structure
-
+```
 Identification-of-Genes-Associated-with-Autism-Spectrum-Disorder/
-├── LICENSE
+├── FYP-Code.ipynb
+├── Data/
+│ ├── SFARI-Gene_genes.csv
+│ ├── negative_genes.csv
+│ └── ppi_network_largest_component.edgelist
 ├── README.md
-├── requirements.txt
-├── Concept-Paper.pdf
-└── FYP-Code.ipynb
-
+└── requirements.txt
+```
 - **FYP-Code.ipynb** → main notebook containing data loading, propagation algorithm, and result analysis  
 - **Concept-Paper.pdf** → project concept and detailed methodology  
 - **requirements.txt** → dependencies required to run the notebook  
@@ -29,17 +31,20 @@ Identification-of-Genes-Associated-with-Autism-Spectrum-Disorder/
 ## ⚙️ Setup & Installation
 
 # Clone the repository
+```
 git clone https://github.com/subhan-liaqat/Identification-of-Genes-Associated-with-Autism-Spectrum-Disorder.git
 cd Identification-of-Genes-Associated-with-Autism-Spectrum-Disorder
-
+```
 # (Optional but recommended) Create a virtual environment
+```
 python -m venv .venv
 source .venv/bin/activate      # macOS / Linux
 # .venv\Scripts\activate       # Windows
-
+```
 # Install dependencies
+```
 pip install -r requirements.txt
-
+```
 ---
 
 ## ▶️ Running the Notebook
@@ -70,7 +75,7 @@ pip install -r requirements.txt
 ## 📋 Dependencies
 
 These are the primary packages required (see full list in requirements.txt):
-
+```
 numpy  
 scipy  
 pandas  
@@ -81,7 +86,7 @@ seaborn
 tqdm  
 gseapy  
 requests  
-
+```
 ---
 
 ## 📄 License
